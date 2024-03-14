@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolateria</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./lib/jquery.mask.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Diplomata&family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="./main.css">
+    <script src="./main.js"></script>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0">Chocolateria&Cia</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao"><span class="navbar-toggler-icon"></span></button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills fw-bold d-block d-md-flex">
+                    <li class="nav-item">
+                        <a href="#sobre-a-loja" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre a loja
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#linhas" class="nav-link">
+                            <i class="bi bi-cake2-fill me-1"></i>
+                            Nossas linhas
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#produtos" class="nav-link">
+                            <i class="bi bi-bag-fill me-1"></i>
+                            Produtos
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contato" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Contato
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre-a-loja">
+            <div class="carousel slide" data-bs-ride="carousel" id="slide-imagens">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000"><img src="./slide/chocolate-968457_1920.jpg" alt=""></div>
+                    <div class="carousel-item" data-bs-interval="3000"><img src="./slide/chocolates-276786_1920.jpg" alt=""></div>
+                    <div class="carousel-item" data-bs-interval="3000"><img src="./slide/strawberries-1223153_1920.jpg" alt=""></div>
+                </div>
+    
+                <button type="button" class="carousel-control-prev" data-bs-target="#slide-imagens" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" class="carousel-control-next" data-bs-target="#slide-imagens" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+    
+                <div class="carousel-indicators">
+                    <button data-bs-target="#slide-imagens" data-bs-slide-to="0" class="active"></button>
+                    <button data-bs-target="#slide-imagens" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#slide-imagens" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img class="d-block w-100 rounded" src="./loja/candy-store-1478703_1920.jpg" alt="">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="section-title">a Loja</span></h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolorem iste repellat. Consequuntur dolorem porro libero amet, autem animi minima modi, atque non debitis beatae accusantium, in et! Beatae, labore.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, distinctio unde totam eum id blanditiis cum reprehenderit. Debitis, quidem excepturi, architecto, consectetur modi neque odio officia laboriosam iste eum illum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="linhas" class="pt-4 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">
+                        Nossas <span>linhas</span>
+                    </h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded" src="./linhas/cake-8233676_1920.jpg" alt="">
+                        <h3 class="section-title pt-3 text-colored">Bolos</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsa temporibus quis ex autem voluptatibus nostrum commodi magnam odit nemo obcaecati ad reiciendis, soluta deserunt omnis! Eveniet reiciendis doloribus placeat.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded" src="./linhas/chocolates-491165_1920.jpg" alt="">
+                        <h3 class="section-title pt-3 text-colored">Chocolates</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex sed quasi at saepe molestiae dicta, ab eos id aspernatur consequuntur vitae optio, molestias illo magnam, architecto ipsam corrupti sit deserunt.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded" src="./linhas/doughnuts-1868573_1920.jpg" alt="">
+                        <h3 class="section-title pt-3 text-colored">Doces</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint expedita dolore esse possimus natus quae voluptates, ducimus officia dignissimos ipsa error atque eligendi laboriosam veritatis suscipit cupiditate et aliquid sit!</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="produtos">
+            <div class="container">
+                <div class="row mb-4">
+                    <h2 class="section-title text-center">
+                        Nossos <span class="text-colored">produtos</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-produtos fw-bold">
+                            <button type="button" class="nav-link text-colored text-start active" data-bs-toggle="tab" data-bs-target="#chocolates">Chocolates</button>
+                            <button type="button" class="nav-link text-colored text-start" data-bs-toggle="tab" data-bs-target="#presentes">Presentes</button>
+                            <button type="button" class="nav-link text-colored text-start" data-bs-toggle="tab" data-bs-target="#sobremesas">Sobremesas</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content ">
+                            <div class="tab-pane active" id="chocolates">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./produtos/chocolates/chocolate-1063751_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Bombons sortidos</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/chocolates/chocolate-183543_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Chocolates em barras</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/chocolates/white-chocolate-380702_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Chocolates branco</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/chocolates/chocolate-1063751_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Bombons sortidos</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/chocolates/chocolate-183543_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Chocolates em barras</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/chocolates/white-chocolate-380702_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Chocolates branco</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/chocolates/chocolate-1063751_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Bombons sortidos</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/chocolates/chocolate-183543_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Chocolates em barras</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/chocolates/white-chocolate-380702_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Chocolates branco</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/chocolates/chocolate-1063751_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Bombons sortidos</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/chocolates/chocolate-183543_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Chocolates em barras</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/chocolates/white-chocolate-380702_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Chocolates branco</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="presentes">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./produtos/presentes/chess-board-185261_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored">Tabuleiro de xadrez</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/presentes/chocolate-2422304_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored">Cestas de chocolates com vinho</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/presentes/valentines-day-2057745_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored">Bombons sortidos personalizados</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/presentes/chess-board-185261_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored">Tabuleiro de xadrez</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/presentes/chocolate-2422304_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored">Cestas de chocolates com vinho</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/presentes/valentines-day-2057745_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored">Bombons sortidos personalizados</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/presentes/chess-board-185261_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored">Tabuleiro de xadrez</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/presentes/chocolate-2422304_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored">Cestas de chocolates com vinho</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/presentes/valentines-day-2057745_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored">Bombons sortidos personalizados</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/presentes/chess-board-185261_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored">Tabuleiro de xadrez</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/presentes/chocolate-2422304_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored">Cestas de chocolates com vinho</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/presentes/valentines-day-2057745_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored">Bombons sortidos personalizados</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="sobremesas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img src="./produtos/sobremesas/cake-1850011_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Tortas de chocolate</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/sobremesas/chocolate-pudding-5069214_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Pudim no copo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/sobremesas/cupcakes-2600516_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Cheese cake</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/sobremesas/cake-1850011_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Tortas de chocolate</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/sobremesas/chocolate-pudding-5069214_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Pudim no copo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/sobremesas/cupcakes-2600516_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Cheese cake</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/sobremesas/cake-1850011_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Tortas de chocolate</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/sobremesas/chocolate-pudding-5069214_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Pudim no copo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/sobremesas/cupcakes-2600516_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Cheese cake</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/sobremesas/cake-1850011_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Tortas de chocolate</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/sobremesas/chocolate-pudding-5069214_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Pudim no copo</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img src="./produtos/sobremesas/cupcakes-2600516_1920.jpg" alt="" class="d-block w-100 rounded mb-3">
+                                        <h5 class="text-colored fw-bold">Cheese cake</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="pt-5 pb-5" id="contato">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">Entre em <span class="text-colored">contato</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-colored">Seu nome</label>
+                                <input id="nome" type="text" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-colored">E-mail</label>
+                                <input id="email" type="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                                <input id="telefone" type="tel" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-colored">Sua mensagem</label>
+                                <textarea id="mensagem" class="form-control"></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row ms-5">
+                            <h3 class="section-title fs-4 text-colored"><i class="bi bi-hand-thumbs-up-fill me-2"></i>Redes sociais</h3>
+                            <ul class="social-links">
+                                <li class="fs-5"><a href="#"><i class="text-colored bi bi-instagram"></i></a></li>
+                                <li class="fs-5 ms-1 me-1"><a href="#"><i class="text-colored bi bi-facebook"></i></a></li>
+                                <li class="fs-5"><a href="#"><i class="text-colored bi bi-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4 ms-5">
+                            <h3 class="section-title fs-4 text-colored"><i class="bi bi-cursor-fill me-2"></i>Endereço</h3>
+                            <p>Rua JavaScript nº 268, Bairro HTML - São Paulo - SP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
